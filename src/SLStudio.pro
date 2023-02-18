@@ -196,7 +196,7 @@ win32 {
 
     # pcl dependencies
     INCLUDEPATH += "$$(BOOST_ROOT)/include" \
-                   "$$(EIGEN_ROOT)" \
+                   <C:\Eigen\Eigen> \
                    "$$(FLANN_ROOT)/include"
     LIBS += -L"$$(BOOST_ROOT)/lib" -lboost_system-vc100-mt-1_50 -lboost_system-vc100-mt-gd-1_50
 
