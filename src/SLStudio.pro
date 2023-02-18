@@ -131,11 +131,11 @@ win32 {
     DEFINES += DBOOST_TT_HAS_OPERATOR_HPP_INCLUDED
 
     # opencv
-    INCLUDEPATH += "$$(OPENCV_INCLUDE_DIR)/" #C:\opencv\build\include
+    INCLUDEPATH += <C:\opencv\build\include> #C:\opencv\build\include
 
     CONFIG(debug,debug|release){
         #debug
-        LIBS += -L"$$(OPENCV_DIR)" \ #C:\opencv\build\x64\vc12\lib
+        LIBS += -L <C:\opencv\build\x64\vc15\lib> \ #C:\opencv\build\x64\vc12\lib
                 -lopencv_core451d \
                 -lopencv_highgui451d \
                 -lopencv_imgproc451d \
